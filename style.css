@@ -14,3 +14,7 @@ th.special {
     background-color: rgb(7, 255, 243);
     color:black;
 }
+
+table th {
+    padding: 10px;
+  }
