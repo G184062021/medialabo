@@ -18,3 +18,7 @@ th.special {
 table th {
     padding: 10px;
   }
+
+  table td {
+    padding: 3px 10px;
+  }
