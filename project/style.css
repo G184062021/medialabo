@@ -31,3 +31,8 @@ table th {
   table th, table td {
     border: dashed 2px black;
   }
+
+  body {
+    background-image: url(img/世界地図.png);
+    background-repeat:no-repeat
+  }
