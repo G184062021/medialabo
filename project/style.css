@@ -33,6 +33,9 @@ table th {
   }
 
   body {
-    background-image: url(project/世界地図.png);
+    background-image: url(世界地図.png);
     background-repeat:no-repeat
+    background-size:contain;                 /* 画像のサイズを指定    */
+    width:100%;                              /* 横幅のサイズを指定    */
+    height:400px;    
   }
