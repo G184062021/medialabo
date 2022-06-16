@@ -1,6 +1,6 @@
 table,
 td {
-    border: 2px black;
+    border: 1.0px solid black;
 }
 
 thead,
@@ -10,6 +10,6 @@ tfoot {
 }
 
 th.special {
-    font-size: 30px;
+    font-size: px;
     color:black;
 }
