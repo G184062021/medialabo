@@ -5,11 +5,12 @@ td {
 
 thead,
 tfoot {
-    background-color: rgb(7, 255, 243);
+    background-color: rgba(0, 0, 0, 0.337);
     color:black;
 }
 
 th.special {
     font-size: 30px;
+    background-color: rgb(7, 255, 243);
     color:black;
 }
