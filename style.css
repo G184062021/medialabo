@@ -22,3 +22,11 @@ table th {
   table td {
     padding: 3px 10px;
   }
+
+  table {
+    border-collapse: collapse;
+  }
+
+  table th, table td {
+    border: solid 1px black;
+  }
