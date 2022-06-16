@@ -11,7 +11,7 @@ div.zentai {
     grid-template-rows:2fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 2fr;
     grid-gap: 10px;
 
-    width: 1000px;
+    width: 100%;
 }
 div.box:nth-child(5){
     grid-column:1/3;
