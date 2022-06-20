@@ -55,8 +55,8 @@ a.link {
     text-decoration:none;
 }
 
-a:hover,
-a:active {
+a.link:hover,
+a.link:active {
     background: #ffb216;
 }
 /***追従するトップへ戻るボタン***/
