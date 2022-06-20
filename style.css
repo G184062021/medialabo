@@ -39,7 +39,7 @@ body {
     color:white;
 }
 
-a {
+a.link {
     width: 300px;
     height: 30px;
     padding: 5px;
