@@ -3,6 +3,7 @@ h1 {
     background-color: yellow; 
     border: dashed black;
     text-align:center;
+    color:black;
 }
 
 div.zentai {
@@ -10,6 +11,7 @@ div.zentai {
     grid-template-columns: 1fr 2fr; 
     grid-template-rows:2fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 2fr;
     grid-gap: 10px;
+    color:black;
 
     width: 100%;
 }
