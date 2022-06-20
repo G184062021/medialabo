@@ -100,3 +100,6 @@ a:active {
       margin: auto;
       text-align: center;
     }
+    html{
+        scroll-behavior: smooth;
+      }
