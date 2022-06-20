@@ -85,4 +85,7 @@ a:active {
     transform: rotate(35deg);
     transform-origin: left top;
 }
+html {
+    scroll-behavior: smooth;
+}
 /***トップへ戻るボタンここまで***/
