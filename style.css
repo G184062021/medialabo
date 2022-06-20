@@ -38,3 +38,23 @@ body {
     background-color: black;
     color:white;
 }
+
+a {
+    width: 160px;
+    height: 30px;
+    padding: 5px;
+    display: block;
+    color: white;
+    border-top: 1px solid #DDD;
+    border-left: 1px solid #DDD;
+    border-right: 1px solid #BBB;
+    border-bottom: 1px solid #BBB;
+    font-weight: bold;
+    background: orange;
+    text-align: center;
+}
+
+a:hover,
+a:active {
+    background: #ffb216;
+}
