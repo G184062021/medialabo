@@ -1,6 +1,6 @@
 h1 {
     font-size: 50px; 
-    background-color: yellow; 
+    background-color: white; 
     border: dashed black;
     text-align:center;
     color:black;
@@ -32,10 +32,10 @@ div.box:nth-child(22){
     grid-row:11/12
 }
 div.box {
-    background: rgba(71, 248, 248, 0.647);
+    background: #f5f5b9;
 }
 body {
-    background-color: rgb(5, 150, 49);
+    background-color: rgb(17, 165, 62);
     color:white;
 }
 
@@ -45,12 +45,12 @@ a.link {
     padding: 5px;
     display: block;
     color: rgb(0, 0, 0);
-    border-top: 1px solid rgb(235, 171, 171);
-    border-left: 1px solid rgb(9, 77, 13);
-    border-right: 1px solid rgb(109, 218, 189);
-    border-bottom: 1px solid rgb(215, 22, 228);
+    border-top: 1px solid orange;
+    border-left: 1px solid orange;
+    border-right: 1px solid orange;
+    border-bottom: 1px solid orange;
     font-weight: bold;
-    background: orange;
+    background: white;
     text-align: center;
     text-decoration:none;
 }
