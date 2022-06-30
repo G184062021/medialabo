@@ -47,5 +47,17 @@ let data = {
 
 ////////// 課題3-2 ここからプログラムを書こう
 
-console.log("都市名："+ data.name +",最高気温："+data.main.temp_max+",最低気温："+data.main.temp_min);
-console.log("天気："+data.weather.description+ ",湿度：" +data.main.humidity + ",風速：" +data.wind.speed + ",風向：" +data.wind.deg);
+let ba = document.querySelector("span#basyo");
+let te = document.querySelector("span#tenki");
+let hk = document.querySelector("span#highkion");
+let lk = document.querySelector("span#lowkion");
+let si = document.querySelector("span#sitsudo");
+let huk = document.querySelector("span#huko");
+let hus = document.querySelector("span#husoku");
+ba.textContent =data.name;
+te.textContent =data.weather.description;
+hk.textContent =data.main.temp_max;
+lk.textContent =data.main.temp_min;
+si.textContent =data.main.humidity;
+huk.textContent =data.wind.deg;
+hus.textContent =data.wind.speed;
