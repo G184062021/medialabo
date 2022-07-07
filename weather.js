@@ -61,3 +61,13 @@ lk.textContent =data.main.temp_min;
 si.textContent =data.main.humidity;
 huk.textContent =data.wind.deg;
 hus.textContent =data.wind.speed;
+
+let b = document.querySelector('#search');
+b.addEventListener('click', search);
+
+function search() {
+  let a = document.querySelector('input[name="search"]');
+  if (a==="-") {
+    
+  }
+}
