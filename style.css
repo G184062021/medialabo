@@ -11,15 +11,18 @@ div.zentai {
     grid-template-columns: 1fr 2fr; 
     grid-template-rows:2fr 2fr 1fr
      2fr 1fr 2fr
-      1fr 2fr 2fr
-       2fr 1fr 2fr 
-       2fr 1fr 2fr
-        1fr 2fr 1fr 
-        2fr 2fr 2fr 
-        2fr 2fr 1fr
-         2fr  1fr 2fr
-          1fr 2fr 2fr
-          2fr;
+     1fr 2fr 2fr
+     2fr 1fr 2fr 
+     2fr 1fr 2fr
+     1fr 2fr 1fr 
+     2fr 2fr 2fr 
+     2fr 2fr 1fr
+     2fr 1fr 2fr
+     1fr 2fr 2fr
+     2fr 2fr 1fr
+     2fr 1fr 2fr
+     1fr 2fr 2fr
+     2fr ;
     grid-gap: 10px;
     color:black;
 
@@ -64,6 +67,18 @@ div.box:nth-child(43){
 div.box:nth-child(46){
     grid-column:1/3;
     grid-row:28/29
+}
+div.box:nth-child(55){
+    grid-column:1/3;
+    grid-row:33/34
+}
+div.box:nth-child(58){
+    grid-column:1/3;
+    grid-row:35/36
+}
+div.box:nth-child(61){
+    grid-column:1/3;
+    grid-row:37/38
 }
 div.box {
     background: #f5f5b9;
