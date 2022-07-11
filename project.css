@@ -1,42 +1,135 @@
+h1,p{
+  text-align: center;
+}
+.box1 {
+  position:relative;
+  height:auto;
+  margin:auto;
+}
+.box1 img.map{
+  width:100%;
+}
+.box1 img.pin{
+  width: 30px;
+  height:30px;
+  position:absolute;
+  
+  transform: translate(-50%,-50%);
+  color:#FFF;
+}
+/* ピンをホバーした */
+img.pin:hover{
 
-table,
-td {
-    border: 2px solid black;
+  opacity:0.5;/* 透明度 */
+  cursor:pointer;/* 画像をホバーしたときのカーソルにする */
 }
 
-thead,
-tfoot {
-    background-color: rgba(0, 0, 0, 0.337);
-    color:black;
+/* 画像をクリック時 */
+img.pin[name="カイロ"]:active{
+  /* 押した感を演出 */
+  position:absolute;
+  top: 32%;
 }
-
-th.special {
-    font-size: 30px;
-    background-color: rgb(7, 255, 243);
-    color:black;
+img[name="カイロ"]{
+  top: 31%;
+  left: 57%;
 }
-
-table th {
-    padding: 10px;
-  }
-
-  table td {
-    padding: 3px 10px;
-  }
-
-  table {
-    border-collapse: collapse;
-  }
-
-  table th, table td {
-    border: dashed 2px black;
-  }
-
-  body {
-    background-image: url(世界地図.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-    background-position: center;
-  }
+img.pin[name="モスクワ"]:active{
+  /* 押した感を演出 */
+  position:absolute;
+  top: 22%;
+}
+img[name="モスクワ"]{
+  top: 21%;
+  left: 59%;
+}
+img.pin[name="ヨハネスブルク"]:active{
+  /* 押した感を演出 */
+  position:absolute;
+  top: 58%;
+}
+img[name="ヨハネスブルク"]{
+  top: 57%;
+  left: 56%;
+}
+img.pin[name="北京"]:active{
+  /* 押した感を演出 */
+  position:absolute;
+  top: 28%;
+}
+img[name="北京"]{
+  top: 27%;
+  left: 77.5%;
+}
+img.pin[name="東京"]:active{
+  /* 押した感を演出 */
+  position:absolute;
+  top: 30%;
+}
+img[name="東京"]{
+  top: 29%;
+  left: 83.5%;
+}
+img.pin[name="シンガポール"]:active{
+  /* 押した感を演出 */
+  position:absolute;
+  top: 45%;
+}
+img[name="シンガポール"]{
+  top: 44%;
+  left: 75%;
+}
+img.pin[name="シドニー"]:active{
+  /* 押した感を演出 */
+  position:absolute;
+  top: 62%;
+}
+img[name="シドニー"]{
+  top: 61%;
+  left: 86%;
+}
+img.pin[name="ロンドン"]:active{
+  /* 押した感を演出 */
+  position:absolute;
+  top: 21.5%;
+}
+img[name="ロンドン"]{
+  top: 20.5%;
+  left: 49.5%;
+}
+img.pin[name="パリ"]:active{
+  /* 押した感を演出 */
+  position:absolute;
+  top: 23%;
+}
+img[name="パリ"]{
+  top: 22%;
+  left: 50%;
+}
+img.pin[name="リオデジャネイロ"]:active{
+  /* 押した感を演出 */
+  position:absolute;
+  top: 55%;
+}
+img[name="リオデジャネイロ"]{
+  top: 54%;
+  left: 39%;
+}
+img.pin[name="ニューヨーク"]:active{
+  /* 押した感を演出 */
+  position:absolute;
+  top: 28%;
+}
+img[name="ニューヨーク"]{
+  top: 27%;
+  left: 31%;
+}
+img.pin[name="ロサンゼルス"]:active{
+  /* 押した感を演出 */
+  position:absolute;
+  top: 40%;
+}
+img[name="ロサンゼルス"]{
+  top: 39%;
+  left: 28%;
+}
