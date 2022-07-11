@@ -1,19 +1,22 @@
+/* タイトルと検索を中央表示 */
 h1,p{
   text-align: center;
 }
+/* ボックスを作り、ポジションを決める */
 .box1 {
   position:relative;
   height:auto;
   margin:auto;
 }
+/* マップをボックスに全面表示 */
 .box1 img.map{
   width:100%;
 }
+/* ピンの設定 */
 .box1 img.pin{
   width: 30px;
   height:30px;
   position:absolute;
-  
   transform: translate(-50%,-50%);
   color:#FFF;
 }
@@ -132,4 +135,82 @@ img.pin[name="ロサンゼルス"]:active{
 img[name="ロサンゼルス"]{
   top: 39%;
   left: 28%;
+}
+
+/* モーダルCSSここから */
+.modalArea {
+  visibility: hidden; /* displayではなくvisibility */
+  opacity : 0;
+  position: fixed;
+  z-index: 10; /* サイトによってここの数値は調整 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: .4s;
+}
+
+.modalBg {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(30,30,30,0.9);
+}
+
+.modalWrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%,-50%);
+  width: 70%;
+  max-width: 500px;
+  padding: 10px 30px;
+  background-color: #fff;
+}
+
+.closeModal {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.is-show { /* モーダル表示用クラス */
+  visibility: visible;
+  opacity : 1;
+}
+/* モーダルCSSここまで */
+
+/* お天気カードの設定 */
+.card{
+  width: auto;
+  height: auto;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,.2)
+}
+.card__imgframe{
+  width: auto;
+  height: auto;
+  /* padding-top: 56.25%; */
+  background: #bbb;
+  box-sizing: border-box;
+}
+.card__textbox{
+  width: 100%;
+  height: auto;
+  padding: 20px 18px;
+  background: #fff;
+  box-sizing: border-box;
+}
+.card__textbox > * + *{
+  margin-top: 10px;
+}
+.card__titletext{
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 125%;
+}
+.card__overviewtext{
+  font-size: 12px;
+  line-height: 150%;
 }
