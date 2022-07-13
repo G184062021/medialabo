@@ -5,7 +5,17 @@ let si = document.querySelector("span#sitsudo");
 let huk = document.querySelector("span#huko");
 let hus = document.querySelector("span#husoku");
 let img = document.createElement('img');
-  
+
+const bgm =new Audio('全てを創造する者「Dominus_Deus」.mp3');
+function saisei(){
+  bgm.volume = 0.005;
+  bgm.loop = true;
+  bgm.play();
+}
+'use strict';
+const pinon = new Audio('決定ボタンを押す12.mp3');
+const searchon = new Audio('決定ボタンを押す50.mp3');
+
 /*IMG要素をすべてセレクト*/
 document.querySelectorAll("img").forEach((imgElm) => {
   /*[3]要素のクリックイベントにイベントリスナーをひもづける*/
@@ -13,6 +23,7 @@ document.querySelectorAll("img").forEach((imgElm) => {
 })
 
 function touch(p){
+  pinon.play();
   let n = p.target.getAttribute('id');
   if (n==='ka'){
     let url = "https://www.nishita-lab.org/web-contents/jsons/openweather/360630.json";  
@@ -99,12 +110,6 @@ function touch(p){
     .then(finish); 
     // te='雲';
   }else {
-    let url = "https://www.nishita-lab.org/web-contents/jsons/openweather/5368361.json";
-    axios.get(url)
-    .then(showResult)   // 通信成功
-    .catch(showError)   // 通信失敗
-    .then(finish);
-    // te='晴天';
   }
 }
 
@@ -112,6 +117,7 @@ let b = document.querySelector('button#kensaku');
 b.addEventListener('click', search)
 
 function search() {
+  searchon.play();
   var a=document.getElementById('search');
   if(a.value ==="1") {
     let url = "https://www.nishita-lab.org/web-contents/jsons/openweather/360630.json";  
@@ -198,12 +204,8 @@ function search() {
     .then(finish);
     // te='雲';
   }else {
-    let url = "https://www.nishita-lab.org/web-contents/jsons/openweather/5368361.json";
-    axios.get(url)
-    .then(showResult)   // 通信成功
-    .catch(showError)   // 通信失敗
-    .then(finish);
-    // te='晴天';
+    let url =null;
+    
   }
 
 }
