@@ -17,7 +17,7 @@ const pinon = new Audio('決定ボタンを押す12.mp3');
 const searchon = new Audio('決定ボタンを押す50.mp3');
 
 /*IMG要素をすべてセレクト*/
-document.querySelectorAll("img").forEach((imgElm) => {
+document.querySelectorAll("img.pin").forEach((imgElm) => {
   /*[3]要素のクリックイベントにイベントリスナーをひもづける*/
   imgElm.addEventListener('click', touch);
 })

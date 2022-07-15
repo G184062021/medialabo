@@ -25,7 +25,6 @@ div.zentai {
      2fr ;
     grid-gap: 10px;
     color:black;
-
     width: 100%;
 }
 div.box:nth-child(5){
