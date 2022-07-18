@@ -5,13 +5,9 @@ let si = document.querySelector("span#sitsudo");
 let huk = document.querySelector("span#huko");
 let hus = document.querySelector("span#husoku");
 let img = document.createElement('img');
+let tenki =document.querySelector("span#tenki");
+const bgm =new Audio('Cat_life.mp3');
 
-const bgm =new Audio('全てを創造する者「Dominus_Deus」.mp3');
-function saisei(){
-  bgm.volume = 0.005;
-  bgm.loop = true;
-  bgm.play();
-}
 'use strict';
 const pinon = new Audio('決定ボタンを押す12.mp3');
 const searchon = new Audio('決定ボタンを押す50.mp3');
@@ -220,6 +216,7 @@ function showResult(resp) {
         data = JSON.parse(data);
     }
     let te =data.weather[0].description;
+    tenki.textContent =data.weather[0].description;
     ba.textContent =data.name;
     hk.textContent =data.main.temp_max+"℃";
     lk.textContent =data.main.temp_min+"℃";
@@ -301,5 +298,21 @@ function finish() {
       }
     }());
 
+  var closeBtn = document.getElementById('musicok');
+  var musicset = document.getElementById('musicset');
+closeBtn.addEventListener('click',musiccheck);
 
+function musiccheck() {
+  let on =document.querySelectorAll('input[name="music"]');
+  for (let r of on) {
+    if (r.checked) {
+      if (r.value==='on'){
+        bgm.volume = 0.05;
+        bgm.loop = true;
+        bgm.play();
+      }
+      musicset.style.display = 'none';
+    }
+  }
+}
     

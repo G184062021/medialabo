@@ -10,7 +10,7 @@
       <script src="project.js"  defer></script>
     </head>
 
-    <body onload="saisei();">
+    <body>
       <h1>世界の天気</h1>
       <P>
         <label for="search">都市: </label>
@@ -58,29 +58,13 @@
                 <span id="basyo"></span>の天気
               </div>
               <div class="card__overviewtext">
-                <table border="2" width="100%" height="80%">
-                  <thead>
-                    <tr>
-                      <th class="special" colspan="5">データ一覧</th>
-                    </tr>
-                    <tr>
-                      <th>最高気温</th>
-                      <th>最低気温</th>
-                      <th>湿度</th>
-                      <th>風向</th>
-                      <th>風速</th>
-                    </tr>
-                  </thead>
-                    <tbody>
-                      <tr>
-                        <td><span id ="highkion"></span></td>
-                        <td><span id ="lowkion"></span></td>
-                        <td><span id ="sitsudo"></span></td>
-                        <td><span id ="huko"></span></td>
-                        <td><span id ="husoku"></span></td>
-                      </tr>
-                    </tbody>
-                </table>
+                <div class="info">
+                  <h2 class="tenki"><span id="tenki"></span></h2>
+                  <P class="date">湿度　|　風向　|　風速</P>
+                  <p class="date"><span id ="sitsudo"></span>|北から<span id ="huko"></span>° | <span id ="husoku"></span></p>
+                  <h1>最高気温|最低気温</h1>
+                  <h1 class="temp"> <span id ="highkion"></span> | <span id ="lowkion"></span> </h1>
+                </div>
               </div>
             </div>
           </div>
@@ -92,7 +76,18 @@
       </div>
     </section>
     <!-- モーダルエリアここまで -->
+     <!-- musicエリアここから -->
+      <div id="musicset" class="musicset">
+        <div class="music_content">
+          <h2>BGMを設定します。選択してボタンを押してください。</h2>
+          <p>
+          <input type="radio" name="music" id="musicon" value="on">
+          <label for="musicon">BGMオン</label>
+          <input type="radio" name="music" id="musicoff" value="off">
+          <label for="musicoff">BGMオフ</label>
+          </p>
+          <p><button id="musicok">確定</button></p>
+        </div>
+      </div>
     </body>
   </html>
-
-  <!-- https://goworkship.com/magazine/css-js-snippents-weather/ -->
