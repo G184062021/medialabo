@@ -19,7 +19,7 @@ document.querySelectorAll("img.pin").forEach((imgElm) => {
 })
 
 function touch(p){
-  pinon.volume=0.5;
+  pinon.volume=0.1;
   pinon.play();
   let n = p.target.getAttribute('id');
   if (n==='ka'){
