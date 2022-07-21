@@ -19,6 +19,7 @@ document.querySelectorAll("img.pin").forEach((imgElm) => {
 })
 
 function touch(p){
+  pinon.volume=0.5;
   pinon.play();
   let n = p.target.getAttribute('id');
   if (n==='ka'){
@@ -106,6 +107,7 @@ function touch(p){
     .then(finish); 
     // te='雲';
   }else {
+    
   }
 }
 

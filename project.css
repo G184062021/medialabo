@@ -233,3 +233,22 @@ img[name="ロサンゼルス"]{
   width: 500px;
   margin: 25% auto;
 }
+
+div.date {
+  display:grid;
+  grid-template-columns:5fr 1fr 5fr 1fr 5fr;
+  grid-template-rows:1fr 2fr;
+  grid-gap: 10px;
+  width: 100%;
+}
+div.situdo {
+  text-align: center;
+}
+
+div.huk {
+  text-align: center;
+}
+
+div.husok {
+  text-align: center;
+}
