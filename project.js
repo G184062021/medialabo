@@ -107,7 +107,6 @@ function touch(p){
     .then(finish); 
     // te='雲';
   }else {
-    
   }
 }
 
