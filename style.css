@@ -21,8 +21,7 @@ div.zentai {
      1fr 2fr 2fr
      2fr 2fr 1fr
      2fr 1fr 2fr
-     1fr 2fr 2fr
-     2fr ;
+     1fr 2fr 2fr;
     grid-gap: 10px;
     color:black;
     width: 100%;
